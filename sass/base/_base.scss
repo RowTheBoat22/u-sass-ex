@@ -1,0 +1,31 @@
+/* Basic Reset on universal selector*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* 
+font size default is 16px
+get the percentage of 10 from 16
+so if user change the font size on their own then it will happen
+instead of font size is declared in px on html root
+*/
+
+html {
+    // define 1 rem, 
+    font-size: 62.5%;
+}
+
+body {  
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+    
+}
